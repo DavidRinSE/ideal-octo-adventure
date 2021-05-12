@@ -10,7 +10,7 @@ phases:
       - cd serverless && npm install && cd -
   build:
     commands:
-      - cd serverless && serverless deploy -s ${CODEBUILD_INITIATOR##*/} && cd -
+      - cd serverless && serverless deploy && cd -
 
 cache:
   paths:
