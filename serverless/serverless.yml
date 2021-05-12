@@ -1,13 +1,9 @@
-service: portfolio
-frameworkVersion: '2'
+service: test-form-submission
 
 provider:
   name: aws
-  stage: ${opt:stage, 'develop'}
   region: us-east-2
   runtime: nodejs12.x
-  memorySize: 128 # optional, in MB, default is 1024
-  timeout: 30 # max timeout for API GW is 30 seconds
 
 functions:
   contactFormSubmit:
