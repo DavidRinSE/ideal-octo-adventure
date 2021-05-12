@@ -17,6 +17,7 @@ async function contactFormSubmit(event, context, callback) {
   let senderEmail
   let name
   let message
+  console.log(message)
   console.log(event['body'])
   if (event['body'] !== null && event['body'] !== undefined) {
     body = JSON.parse(event['body'])
